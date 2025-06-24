@@ -1,42 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Simple Button Page</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f0f0f0;
-        }
+  <meta charset="UTF-8">
+  <title>Simulation Notice</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
 
-        button {
-            padding: 15px 30px;
-            font-size: 18px;
-            background-color: #007bff;
-            color: white;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-        }
+    .container {
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
 
-        button:hover {
-            background-color: #0056b3;
-        }
-    </style>
+    h1 {
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    button {
+      background-color: #3498db;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 6px;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #2c80b4;
+    }
+  </style>
 </head>
 <body>
 
-    <button onclick="handleClick()">Click Me</button>
+<div class="container">
+  <h1>This is the simulation of the real website</h1>
+  <button onclick="redirectToRealSite()">Go to Website</button>
+</div>
 
-    <script>
-        function handleClick() {
-            alert("Button was clicked!");
-        }
-    </script>
+<script>
+  function redirectToRealSite() {
+    // Replace with your actual site URL
+    window.location.href = "https://mohamedhassan164.github.io/simulation/";
+  }
+</script>
 
 </body>
 </html>
